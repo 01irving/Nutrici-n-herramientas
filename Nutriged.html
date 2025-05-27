@@ -1,105 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herramientas Nutriged</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #008080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 20px;
-      gap: 30px;
-      justify-content: center;
-    }
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      flex: 1 1 300px;
-      max-width: 500px;
-    }
-    .card h2 a {
-      text-decoration: none;
-      color: #008080;
-    }
-    .card h2 a:hover {
-      text-decoration: underline;
-    }
-    .sidebar {
-      background-color: #fff3e0;
-      border: 1px solid #ffd180;
-      padding: 20px;
-      border-radius: 10px;
-      flex: 1 1 300px;
-      max-width: 400px;
-    }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 0.9em;
-    }
-    .contacto {
-      margin-top: 10px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nutriged</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .info {
+    width: 100%;
+    border-left: none;
+    border-bottom: 2px solid #004080;
+    padding-left: 0;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .info img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info p {
+    margin: 10px 0;
+  }
+  .main-content {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .links {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    margin-left: 0;
+  }
+  .links a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+  }
+  .links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .links li {
+    margin: 15px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .links .icon {
+    font-size: 1.3em;
+    min-width: 2em;
+    text-align: center;
+  }
+  .blog-box {
+    min-width: 320px;
+    max-width: 400px;
+    background: #f7faff;
+    border: 1px solid #cce0ff;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .blog-box h2 {
+    margin-top: 0;
+    color: #004080;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  .blog-box a {
+    word-break: break-all;
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
-
-<header>
-  <h1>📚 Herramientas Digitales para Profesionales de la Nutrición</h1>
-  <p class="contacto">📞 Contacto: 996 105 9072 &nbsp; | &nbsp; 🔵 <a href="https://www.facebook.com/Nutriged" target="_blank" style="color: #ffd700;">Nutriged</a></p>
-</header>
-
-<div class="container">
-  <div class="card">
-    <h2>💧 <a href="https://01irving-spidy-tasa-de-sudoracin-lkvvjc.streamlit.app/?fbclid=IwY2xjawKivMxleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR5BFHjUIouacnkxa0ThOJQwiVJFrMB2Zncz5Lyc9uOiP7_DA5gyMHZ_Zz0pkw_aem_kIEHreg613vhSoRjYej47w" target="_blank">Tasa de Sudoración</a></h2>
-    <p>Calcula cuánta agua pierde tu paciente durante la actividad física y mejora tu planificación de hidratación.</p>
+  <div class="info">
+    <img src="Nutriged.jpg" alt="Logo Nutriged" />
+    <h1>Nutriged</h1>
+    <p>Nutriged es una página dedicada a difundir información de nutrición y su relación con la salud y enfermedad.</p>
+    <p>📱 Teléfono: 9961059072</p>
   </div>
-
-  <div class="card">
-    <h2>🔥 <a href="https://edrmerztugwefaknzq9hwx.streamlit.app/?fbclid=IwY2xjawKivVtleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR7xhImHwv3qP5br_QepOZsf1-0Q2Zz9-JUZebdulAl-TMY1dcbAIKkmRZrh2Q_aem_eJALyGp8w-SifwvE8bsNNA" target="_blank">Gasto Energético Diario (24h)</a></h2>
-    <p>Herramienta basada en la ecuación de Schofield y METs para conocer el gasto calórico de forma precisa.</p>
+  <div class="main-content">
+    <div class="links">
+      <h2>Herramientas y Calculadoras</h2>
+      <ul>
+        <li>
+          <span class="icon">💧</span>
+          <a href="https://01irving-spidy-tasa-de-sudoracin-lkvvjc.streamlit.app/?fbclid=IwY2xjawKivMxleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR5BFHjUIouacnkxa0ThOJQwiVJFrMB2Zncz5Lyc9uOiP7_DA5gyMHZ_Zz0pkw_aem_kIEHreg613vhSoRjYej47w" target="_blank" rel="noopener noreferrer">
+            Tasa de Sudoración
+          </a>
+        </li>
+        <li>
+          <span class="icon">⚡</span>
+          <a href="https://edrmerztugwefaknzq9hwx.streamlit.app/?fbclid=IwY2xjawKivVtleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR7xhImHwv3qP5br_QepOZsf1-0Q2Zz9-JUZebdulAl-TMY1dcbAIKkmRZrh2Q_aem_eJALyGp8w-SifwvE8bsNNA" target="_blank" rel="noopener noreferrer">
+            Calculadora del gasto de energía en 24 h usando la ecuación de Schofield y met´s
+          </a>
+        </li>
+        <li>
+          <span class="icon">🧍‍♂️</span>
+          <a href="https://iqwybb-irving-euan.shinyapps.io/somatotipo/?fbclid=IwY2xjawKivgpleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR4CuyMOtjTXksBZJXKKxjDiHS0kYAOQQkYPXQAU7GIvLrX_9DsuvatTw6T-KA_aem_edhxAMdaZnW4O37IW51OmQ" target="_blank" rel="noopener noreferrer">
+            Calculadora del somatotipo
+          </a>
+        </li>
+        <li>
+          <span class="icon">🤰</span>
+          <a href="https://iqwybb-irving-euan.shinyapps.io/Publicaciones/?fbclid=IwY2xjawKivl9leHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR47vstgVdgrCL4oczr4wO5KGipzWJk8_x7u_r0I6oR0upZE1nF-YwEKSo7Axg_aem_VvB-1V_8EoYWg-TzpsCLpg" target="_blank" rel="noopener noreferrer">
+            Calculo del gasto energético en pacientes embarazadas
+          </a>
+        </li>
+        <li>
+          <span class="icon">📝</span>
+          <a href="https://irvingeuandzulnutricion.blogspot.com/" target="_blank" rel="noopener noreferrer">
+            Blog de Nutrición
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="blog-box">
+      <h2>Blog</h2>
+      <a href="https://irvingeuandzulnutricion.blogspot.com/" target="_blank" rel="noopener noreferrer">
+        https://irvingeuandzulnutricion.blogspot.com/
+      </a>
+    </div>
   </div>
-
-  <div class="card">
-    <h2>🧬 <a href="https://iqwybb-irving-euan.shinyapps.io/somatotipo/?fbclid=IwY2xjawKivgpleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR4CuyMOtjTXksBZJXKKxjDiHS0kYAOQQkYPXQAU7GIvLrX_9DsuvatTw6T-KA_aem_edhxAMdaZnW4O37IW51OmQ" target="_blank">Calculadora del Somatotipo</a></h2>
-    <p>Determina si tu paciente es endomorfo, mesomorfo o ectomorfo para adaptar la estrategia nutricional.</p>
-  </div>
-
-  <div class="card">
-    <h2>🤰 <a href="https://iqwybb-irving-euan.shinyapps.io/Publicaciones/?fbclid=IwY2xjawKivl9leHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR47vstgVdgrCL4oczr4wO5KGipzWJk8_x7u_r0I6oR0upZE1nF-YwEKSo7Axg_aem_VvB-1V_8EoYWg-TzpsCLpg" target="_blank">Gasto Energético en Embarazadas</a></h2>
-    <p>Calculadora especializada para estimar el requerimiento calórico durante cada etapa del embarazo.</p>
-  </div>
-
-  <div class="sidebar">
-    <h3>📝 <a href="https://iqwybb-irving-euan.shinyapps.io/Publicaciones" target="_blank">Blog de Nutrición</a></h3>
-    <p>Artículos, investigaciones y contenidos útiles para complementar tu práctica profesional.</p>
-    <p><strong>📍 Ubicación:</strong> columna derecha del sitio</p>
-  </div>
-</div>
-
-<footer>
-  © 2025 Nutriged - Herramientas para Nutriólogos. Desarrollado por Irving Euan.
-</footer>
-
 </body>
 </html>
 
